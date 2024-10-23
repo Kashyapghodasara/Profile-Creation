@@ -8,7 +8,7 @@ This Project is Based on Backend Learning 🚀
 - Express JS
 - MongoDB
 
-In this project You can Create a Profile. Where you can enter your Name, Email and as well as add your Favourit Profile picture. ANd you can also Edit your profile and Delete your Profile.
+In this project You can Create a Profile. Where you can enter your Name, Email and as well as add your Favourit Profile picture. And you can also Edit your profile and Delete your Profile.
 
 
 ## Prerequisites
