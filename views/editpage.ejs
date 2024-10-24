@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+    <link rel="stylesheet" href="../stylesheet/editpage.css">
+</head>
+<body>
+    <h1 class="heading">Update User</h1>
+    <div class="form-container">
+        <!-- We give user._id cause of every time we tell the server to which user has to ber updated or processed -->
+        <form action="/update/<%= user._id %>" method="POST"> 
+            <input type="text" id="input1" name="username" placeholder="Update your Name" value="<%= username %>">
+
+            <input type="email" id="input2" name="email" placeholder=" Update Email" value="<%= email %>">
+
+            <input type="text" id="input3" name="image" placeholder="Update Image URL" value="<%= image %>">
+
+            <input type="submit" value="Update">
+        </form>
+    </div>
+</body>
+</html>

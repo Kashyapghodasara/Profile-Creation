@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./stylesheet/profile.css">
+</head>
+<body>
+  <h2>User Profiles</h2><br>
+  <a class="home" href="/">Back to Home</a>
+<div class="container">
+  <div class="user-cards">
+    <% if (users.length > 0) { %>
+      <% users.forEach(function(user) { %>
+        <div class="card">
+          <div class="photo">
+            <img src="<%= user.image %>" alt="<%= user.username %>">
+          </div>
+          <div class="card-content">
+            <h3><%= user.username %></h3>
+            <p><%= user.email %></p>
+          </div>
+          <div class="card-actions">
+            <a href="/edit/<%= user._id %>" class="edit">Edit User</a>
+            <a href="/delete/<%= user._id %>" class="delete">Delete User</a>
+          </div>
+        </div>
+      <% }); %>
+    <% } else { %>
+      <h1>No User Found</h1>
+    <% } %>
+  </div>
+</div>
+
+</body>
+</html>

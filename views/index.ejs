@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Creation</title>
+    <link rel="stylesheet" href="../stylesheet/style.css">
+</head>
+<body>
+   <h1 class="heading">Create User</h1>
+    <div class="form-container">
+        <form action="/create" method="POST"> 
+            <input type="text" id="input1" name="username" placeholder="Enter your Name">
+
+            <input type="email" id="input2" name="email" placeholder="Email">
+
+            <input type="text" id="input3" name="image" placeholder="Image URL">
+
+            <input type="submit" value="Create">
+        </form>
+        <a href="/read">Read Users</a>
+    </div>
+</body>
+</html>
